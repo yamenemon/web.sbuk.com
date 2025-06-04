@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
           child: Row(
             children: [
-              Image.asset("assets/images/sbuk.png"),
+              Image.asset("assets/images/cropped-sbuk_logo_round.png"),
               SizedBox(width: 10),
               Text(
                 "Sonali Bangladesh UK Limited",
