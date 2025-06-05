@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 const primaryColor = 0xFF00150F;
-const secondaryColor = 0xFF03DAC6;
+const secondaryColor = 0xFF00FFB7;
 const backgroundColor = 0xFFFFFFFF;
 const errorColor = 0xFFB00020;
-const textColor = 0xFF000000;
+const textColor = 0xFFFFFFFF;
 const buttonColor = 0xFF6200EE;
 const cardColor = 0xFFF5F5F5;
 const appBarColor = Colors.transparent;
