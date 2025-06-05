@@ -36,7 +36,7 @@ class HomeSlideBitcoin extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   'We are a UK-based financial organization specializing in facilitating international trade through secure, compliant, and efficient financial services. Our expertise spans trade finance, payment solutions, and risk management—empowering businesses to grow and thrive in the global marketplace.',
-                  style: TextStyle(color: Color(textColor), fontSize: 13),
+                  style: TextStyle(color: Colors.black, fontSize: 13),
                 ),
               ],
             ),

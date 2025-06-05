@@ -21,11 +21,13 @@ class ServicesLeftContent extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(5.0),
-        border: Border.all(color: Colors.white.withOpacity(0.2)),
+        border: Border.all(
+          color: const Color.fromARGB(255, 255, 199, 57).withOpacity(0.2),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.6),
-            blurRadius: 20,
+            color: const Color.fromARGB(255, 68, 65, 255).withOpacity(0.3),
+            blurRadius: 5,
             offset: const Offset(0, 10),
           ),
         ],
@@ -94,7 +96,7 @@ class ServicesLeftContent extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.3),
+                  color: const Color(textColor),
                   blurRadius: 0,
                   offset: const Offset(0, 5),
                 ),
@@ -109,15 +111,11 @@ class ServicesLeftContent extends StatelessWidget {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: const Color(0xFF00FFB7),
+                      color: const Color(secondaryColor),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Center(
-                      child: Icon(
-                        product.icon,
-                        size: 20,
-                        color: const Color(primaryColor),
-                      ),
+                      child: Icon(product.icon, size: 20, color: primaryColor),
                     ),
                   ),
                   const SizedBox(width: 16),

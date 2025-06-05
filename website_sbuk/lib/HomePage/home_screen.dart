@@ -10,87 +10,79 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(scaffoldBackgroundColor),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        actions: [
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Home',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'About Us',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Services',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Contact',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Login',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Careers',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              'Knowledge Base',
-              style: TextStyle(color: Color(appBarTextColor)),
-            ),
-          ),
-          SizedBox(width: 20),
-        ],
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-          child: Row(
-            children: [
-              Image.asset("assets/images/cropped-sbuk_logo_round.png"),
-              SizedBox(width: 10),
-              Text(
-                "Sonali Bangladesh UK Limited",
-                style: TextStyle(
-                  color: Color(appBarTextColor),
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: Align(
+          alignment: Alignment.center,
+          child: AppBar(
+            actions: [
+              ElevatedButton(
+                onPressed: null,
+                child: Text(
+                  'Topics',
+                  style: TextStyle(color: Color(appBarTextColor)),
                 ),
               ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: null,
+                child: Text(
+                  'About Us',
+                  style: TextStyle(color: Color(appBarTextColor)),
+                ),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: null,
+                child: Text(
+                  'Services',
+                  style: TextStyle(color: Color(appBarTextColor)),
+                ),
+              ),
+
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: null,
+                child: Text(
+                  'Careers',
+                  style: TextStyle(color: Color(appBarTextColor)),
+                ),
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                onPressed: null,
+                child: Text(
+                  'Knowledge Base',
+                  style: TextStyle(color: Color(appBarTextColor)),
+                ),
+              ),
+              SizedBox(width: 10),
             ],
+            leading: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+              child: Row(
+                children: [
+                  Image.asset("assets/images/cropped-sbuk_logo_round.png"),
+                  SizedBox(width: 10),
+                  Text(
+                    "Sonali Bangladesh UK Limited",
+                    style: TextStyle(
+                      color: Color(textColor),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            leadingWidth: 500,
+            backgroundColor: const Color.fromARGB(255, 1, 55, 99),
+            shadowColor: Color(secondaryColor),
+            elevation: 1,
           ),
         ),
-        leadingWidth: 500,
-        backgroundColor: const Color.fromARGB(
-          255,
-          255,
-          237,
-          180,
-        ).withOpacity(0.1),
-        shadowColor: Colors.white10,
-        elevation: 1,
       ),
       body: Stack(
         children: [
@@ -99,6 +91,7 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
+            color: primaryColor,
           ),
           SingleChildScrollView(
             child: Column(

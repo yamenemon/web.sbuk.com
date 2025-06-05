@@ -20,7 +20,7 @@ class ServicesRightContent extends StatelessWidget {
               height: double.infinity,
             ),
             Image.asset(
-              "assets/images/service_images.png",
+              "assets/images/right_content.png",
               fit: BoxFit.fitHeight,
               width: double.infinity,
               height: double.infinity,
