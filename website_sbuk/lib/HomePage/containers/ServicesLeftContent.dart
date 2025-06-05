@@ -20,7 +20,7 @@ class ServicesLeftContent extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(24.0),
+        borderRadius: BorderRadius.circular(5.0),
         border: Border.all(color: Colors.white.withOpacity(0.2)),
         boxShadow: [
           BoxShadow(
@@ -37,12 +37,27 @@ class ServicesLeftContent extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Our Services',
-                style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color(textColor),
+              RichText(
+                text: TextSpan(
+                  // Note: Styles for TextSpans must be explicitly defined.
+                  // Child text spans will inherit styles from parent
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+
+                    color: Color(secondaryColor),
+                  ),
+                  children: <TextSpan>[
+                    TextSpan(text: 'Services'),
+                    TextSpan(
+                      text: ' We Offer',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Color(textColor),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(height: 20),
@@ -77,8 +92,14 @@ class ServicesLeftContent extends StatelessWidget {
           child: Container(
             // padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: 1),
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.3),
+                  blurRadius: 0,
+                  offset: const Offset(0, 5),
+                ),
+              ],
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -146,5 +167,3 @@ class FinancialProduct {
     required this.icon,
   });
 }
-
-
