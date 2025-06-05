@@ -44,7 +44,6 @@ class ServicesLeftContent extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.bold,
-
                     color: Color(secondaryColor),
                   ),
                   children: <TextSpan>[
